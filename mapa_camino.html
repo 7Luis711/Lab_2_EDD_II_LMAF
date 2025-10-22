@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_beda5142d93baf110d56fc7e138187e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_beda5142d93baf110d56fc7e138187e1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_beda5142d93baf110d56fc7e138187e1 = L.map(
+                "map_beda5142d93baf110d56fc7e138187e1",
+                {
+                    center: [4.70159, -74.1469],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5b7186666ca1adb2b11ac416fe4b6b5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e5b7186666ca1adb2b11ac416fe4b6b5.addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var marker_d03ad3f2721a54431b576ef117c82d23 = L.marker(
+                [4.70159, -74.1469],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var icon_38936c17fb47582ba46478920b70001f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4124b03aebaf3cda7a04a25765d7c766 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da8423cbfb020d82053516fbcbfdd67a = $(`<div id="html_da8423cbfb020d82053516fbcbfdd67a" style="width: 100.0%; height: 100.0%;"><b>El Dorado International Airport</b><br>Bogota, Colombia<br>(BOG)</div>`)[0];
+                popup_4124b03aebaf3cda7a04a25765d7c766.setContent(html_da8423cbfb020d82053516fbcbfdd67a);
+            
+        
+
+        marker_d03ad3f2721a54431b576ef117c82d23.bindPopup(popup_4124b03aebaf3cda7a04a25765d7c766)
+        ;
+
+        
+    
+    
+            marker_d03ad3f2721a54431b576ef117c82d23.bindTooltip(
+                `<div>
+                     1. BOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d03ad3f2721a54431b576ef117c82d23.setIcon(icon_38936c17fb47582ba46478920b70001f);
+            
+    
+            var marker_7810abb1485b35aa3f3a35cf1bdb9d6c = L.marker(
+                [29.9843998, -95.34140015],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var icon_2872a340dfe9b1d0830343ad10f4c1ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_505168127f33546a271db2f6245e2fad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_653e81ecdd24272f873d8081b23cf05d = $(`<div id="html_653e81ecdd24272f873d8081b23cf05d" style="width: 100.0%; height: 100.0%;"><b>George Bush Intercontinental Houston Airport</b><br>Houston, United States<br>(IAH)</div>`)[0];
+                popup_505168127f33546a271db2f6245e2fad.setContent(html_653e81ecdd24272f873d8081b23cf05d);
+            
+        
+
+        marker_7810abb1485b35aa3f3a35cf1bdb9d6c.bindPopup(popup_505168127f33546a271db2f6245e2fad)
+        ;
+
+        
+    
+    
+            marker_7810abb1485b35aa3f3a35cf1bdb9d6c.bindTooltip(
+                `<div>
+                     2. IAH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7810abb1485b35aa3f3a35cf1bdb9d6c.setIcon(icon_2872a340dfe9b1d0830343ad10f4c1ee);
+            
+    
+            var marker_98f2fe87ff867a343db76650bcf49e10 = L.marker(
+                [47.449001, -122.308998],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var icon_c550ead740273735ef1f77c6582e798c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_419e4550a9d5480920e9ee312e778ca9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27d710fc43f3ce1537b7c6f359cd2a45 = $(`<div id="html_27d710fc43f3ce1537b7c6f359cd2a45" style="width: 100.0%; height: 100.0%;"><b>Seattle Tacoma International Airport</b><br>Seattle, United States<br>(SEA)</div>`)[0];
+                popup_419e4550a9d5480920e9ee312e778ca9.setContent(html_27d710fc43f3ce1537b7c6f359cd2a45);
+            
+        
+
+        marker_98f2fe87ff867a343db76650bcf49e10.bindPopup(popup_419e4550a9d5480920e9ee312e778ca9)
+        ;
+
+        
+    
+    
+            marker_98f2fe87ff867a343db76650bcf49e10.bindTooltip(
+                `<div>
+                     3. SEA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98f2fe87ff867a343db76650bcf49e10.setIcon(icon_c550ead740273735ef1f77c6582e798c);
+            
+    
+            var marker_068c63b59ab9aa70637fed3bff147dec = L.marker(
+                [35.552299, 139.779999],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var icon_946d3c63bfedb37d684d1d03bdce1cc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb12c42e19616126767378872b705e89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60cdadd62d922259c2303b1be03e2ac0 = $(`<div id="html_60cdadd62d922259c2303b1be03e2ac0" style="width: 100.0%; height: 100.0%;"><b>Tokyo Haneda International Airport</b><br>Tokyo, Japan<br>(HND)</div>`)[0];
+                popup_fb12c42e19616126767378872b705e89.setContent(html_60cdadd62d922259c2303b1be03e2ac0);
+            
+        
+
+        marker_068c63b59ab9aa70637fed3bff147dec.bindPopup(popup_fb12c42e19616126767378872b705e89)
+        ;
+
+        
+    
+    
+            marker_068c63b59ab9aa70637fed3bff147dec.bindTooltip(
+                `<div>
+                     4. HND
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_068c63b59ab9aa70637fed3bff147dec.setIcon(icon_946d3c63bfedb37d684d1d03bdce1cc6);
+            
+    
+            var poly_line_0853382f61c68b7b5f8ce7b4bbe97863 = L.polyline(
+                [[4.70159, -74.1469], [29.9843998, -95.34140015]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            poly_line_0853382f61c68b7b5f8ce7b4bbe97863.bindTooltip(
+                `<div>
+                     BOG → IAH: 3584.94 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2932cda907402a3bfb956749dd6a63e9 = L.marker(
+                [17.3429949, -84.744150075],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var div_icon_31726d8d66363152de58a0f86798b3cc = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; background:rgba(255,255,255,0.9); padding:2px 4px; border-radius:4px;\"\u003e3584 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_2932cda907402a3bfb956749dd6a63e9.setIcon(div_icon_31726d8d66363152de58a0f86798b3cc);
+            
+    
+            var poly_line_464cd3bdbacfd95d7fce20c5204d60a9 = L.polyline(
+                [[29.9843998, -95.34140015], [47.449001, -122.308998]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            poly_line_464cd3bdbacfd95d7fce20c5204d60a9.bindTooltip(
+                `<div>
+                     IAH → SEA: 3013.41 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d590c53114017ceacaab22d35a772667 = L.marker(
+                [38.7167004, -108.825199075],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var div_icon_fac5a33f08e39c71cc8eee11be9953c9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; background:rgba(255,255,255,0.9); padding:2px 4px; border-radius:4px;\"\u003e3013 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_d590c53114017ceacaab22d35a772667.setIcon(div_icon_fac5a33f08e39c71cc8eee11be9953c9);
+            
+    
+            var poly_line_d575e25ea49adc0c9d78f2691620c44c = L.polyline(
+                [[47.449001, -122.308998], [35.552299, 139.779999]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            poly_line_d575e25ea49adc0c9d78f2691620c44c.bindTooltip(
+                `<div>
+                     SEA → HND: 7711.68 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0c9b5f123dba3c258e7d0cef0795ec07 = L.marker(
+                [41.50065, 8.7355005],
+                {
+}
+            ).addTo(map_beda5142d93baf110d56fc7e138187e1);
+        
+    
+            var div_icon_827703ad88741658c887cacf9746ed54 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; background:rgba(255,255,255,0.9); padding:2px 4px; border-radius:4px;\"\u003e7711 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0c9b5f123dba3c258e7d0cef0795ec07.setIcon(div_icon_827703ad88741658c887cacf9746ed54);
+            
+</script>
+</html>
