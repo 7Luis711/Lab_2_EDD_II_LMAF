@@ -1,4 +1,3 @@
-# airport.py
 class Airport:
     def __init__(self, code, name, city, country, latitude, longitude):
         self.code = code

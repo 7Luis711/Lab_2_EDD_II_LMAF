@@ -1,4 +1,3 @@
-# algorithms.py
 import heapq
 
 def bfs_connected_components(graph):

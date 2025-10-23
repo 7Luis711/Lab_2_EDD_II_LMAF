@@ -1,9 +1,6 @@
-# graph.py
 class Graph:
     def __init__(self):
-        # Diccionario {codigo_aeropuerto: [(codigo_vecino, peso), ...]}
         self.adjacency = {}
-        # Diccionario {codigo_aeropuerto: objeto Airport}
         self.vertices = {}
 
     def add_vertex(self, airport):

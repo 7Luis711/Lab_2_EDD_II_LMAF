@@ -1,4 +1,3 @@
-# geo_utils.py
 import math
 
 def haversine(lat1, lon1, lat2, lon2):
